@@ -140,6 +140,7 @@ var SIR010_popup = new mapboxgl.Popup({
 
 //Marker
 
+
 let CC001_styling = document.createElement("div");
 CC001_styling.className = "custom_marker";
 CC001_styling.style.backgroundImage = "url(../img/CC.png)";

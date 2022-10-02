@@ -46,11 +46,6 @@ p{
   position: relative;
 }
 
-.temporary-gap{
-  height: 10em;
-}
-
-
 /** Navigation / Hamburger menu **/
 header {
   background-color: #fff;
@@ -262,3 +257,16 @@ a {
 
 .region-info { grid-area: region-info; }
 
+.device_info{
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+}
+
+.device-status{
+  height: 25px;
+  width: 25px;
+  background-color: #1ba6e1;
+  border-radius: 50%;
+  display: inline-block;
+}
