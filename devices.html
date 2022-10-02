@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="HSS ENGINERING | Frontend Test">
+  <meta name="author" content="Lise-May Lisbjerg Byfuglien">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="wrap-menu">
+            <ul class="nav-menu">
+                <img src="/img/Logo.PNG" alt="LOGO" class="logo">
+                <li class="nav-item">
+                    <a href="/map.html" class="nav-link">Map</a>
+                </li>
+                <div class="line"></div>
+                <li class="nav-item">
+                    <a href="/devices.html" class="nav-link">Devices</a>
+                </li>
+                <div class="line"></div>
+                <img src="/img/Icons.PNG" alt="menu_icon" class="menu_icon">
+            </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bacground">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main-devices">
+        <section class="devices-top">
+            <h1 class="h1-devices">Devices</h1>
+        </section>
+
+        <div class="horizontal-long-line"></div>
+
+        <section class="main-info">
+            <div class="sirens-info">
+                <h2 class="h2-siren-info blue-bg">Sirens</h2>
+                <h2 class="h2-siren-info gray-bg">Control Centers</h2>
+            </div>
+
+            <div class="region-info">
+                <h2 class="region-top-h2">Green Region</h2>
+                <div class="region-under-category">
+                    <p class="region-under-category-text">Status</p>
+                    <p class="region-under-category-text">ID</p>
+                    <p class="region-under-category-text">Name</p>
+                    <p class="region-under-category-text">Type</p>
+                    <p class="region-under-category-text region-under-category-flags">Flags</p>
+                </div>
+                <div class="horizontal-middel-line"></div>
+
+                <div id="Green-Region" class="refion-row"></div>
+                <!-- region change -->
+                <div class="temporary-gap"></div>
+
+                <h2 class="region-top-h2">Blue Region</h2>
+                <div class="region-under-category">
+                    <p class="region-under-category-text">Status</p>
+                    <p class="region-under-category-text">ID</p>
+                    <p class="region-under-category-text">Name</p>
+                    <p class="region-under-category-text">Type</p>
+                    <p class="region-under-category-text region-under-category-flags">Flags</p>
+                </div>
+                <div class="horizontal-middel-line"></div>
+
+                <div id="Blue-Region"></div>
+
+
+            </div>
+           
+
+        </section>
+        
+    </main>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/devices.js"></script>
+</body>
+</html>
