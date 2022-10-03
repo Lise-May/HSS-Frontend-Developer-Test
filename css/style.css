@@ -214,6 +214,10 @@ a {
   background-color: #717275;
 }
 
+.region-space{
+  padding-bottom: 15px;
+}
+
 .region-info{
   margin-left: 20px;
   margin-right: 3em;
@@ -226,18 +230,14 @@ a {
   padding: 5px;
 }
 
-.region-under-category {
-  display: flex;
-  justify-content: space-between;
-  padding: 2em 0 1em 0;
+.region-categorys-wrap {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.6fr 1fr 0.7fr 0.7fr 1.5fr;
 }
 
-.region-under-category-text{
+.region-category-text{
   font-weight: 550;
-}
-
-.region-under-category-flags{
-  margin-right: 88px;
 }
 
 .main-info {  display: grid;
@@ -258,9 +258,11 @@ a {
 .region-info { grid-area: region-info; }
 
 .device_info{
-  display: flex;
-  flex-direction: initial;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.6fr 1fr 0.7fr 0.7fr 1.5fr;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
 }
 
 .device-status{
@@ -269,4 +271,16 @@ a {
   background-color: #1ba6e1;
   border-radius: 50%;
   display: inline-block;
+}
+
+.flags-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flag {
+  height: 25px;
+  width: 25px;
+  background-color: #1ba6e1;
 }

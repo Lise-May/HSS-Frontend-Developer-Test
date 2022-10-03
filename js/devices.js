@@ -20,10 +20,18 @@ function appendDeviceStatusColor() {
     if (document.getElementByClassName('device-status').innerHTML = 'Fail') {
         document.getElementByClassName('device-status').style.backgroundColor = '#FF0000';
     }
-}
+    else if (document.getElementByClassName('device-status').innerHTML = 'Partial') {
+        document.getElementByClassName('device-status').style.backgroundColor = '#FFFF00';
+    }
+    else if (document.getElementByClassName('device-status').innerHTML = 'Normal') {
+        document.getElementByClassName('device-status').style.backgroundColor = '#32CC32';
+    }
+    
+};
 
 
 //change color on flag (red and gren box) if it true og fail..  
+
 
 
 //Show green region under devices      
@@ -35,12 +43,13 @@ function appendGreenData(data) {
             <p class="device-status">${datas.status}</p> 
             <p>${datas.dId}</p>
             <p>${datas.name}</p>
-            <div class="flags">
-            <p>${datas.Flag1}</p>
-            <p>${datas.Flag2}</p>
-            <p>${datas.Flag3}</p>
-            <p>${datas.Flag4}</p>
-            <p>${datas.Flag5}</p>
+            <p>${datas.type}</p>
+            <div class="flags-wrap">
+            <p class="flag">${datas.Flag1}</p>
+            <p class="flag">${datas.Flag2}</p>
+            <p class="flag">${datas.Flag3}</p>
+            <p class="flag">${datas.Flag4}</p>
+            <p class="flag">${datas.Flag5}</p>
             </div>
 
         </article>
@@ -58,12 +67,13 @@ function appendBlueData(data) {
             <p class="device-status">${datas.status}</p> 
             <p>${datas.dId}</p>
             <p>${datas.name}</p>
-            <div class="flags">
-                <p>${datas.Flag1}</p>
-                <p>${datas.Flag2}</p>
-                <p>${datas.Flag3}</p>
-                <p>${datas.Flag4}</p>
-                <p>${datas.Flag5}</p>
+            <p>${datas.type}</p>
+            <div class="flags-wrap">
+                <p class="flag">${datas.Flag1}</p>
+                <p class="flag">${datas.Flag2}</p>
+                <p class="flag">${datas.Flag3}</p>
+                <p class="flag">${datas.Flag4}</p>
+                <p class="flag">${datas.Flag5}</p>
             </div>
 
         </article>
