@@ -14,8 +14,7 @@ appendDeviceStatusColor();
 
 fetchData();
 
-
-// change color on status (red, yellow and green)   *
+// change color on status (red, yellow and green)
 function appendDeviceStatusColor() {
     if (document.getElementByClassName('device-status').innerHTML = 'Fail') {
         document.getElementByClassName('device-status').style.backgroundColor = '#FF0000';
@@ -30,7 +29,7 @@ function appendDeviceStatusColor() {
 };
 
 
-//change color on flag (red and gren box) if it true og fail..  
+//change color on flag (red and gren)  
 
 
 
@@ -58,7 +57,7 @@ function appendGreenData(data) {
     document.querySelector('#Green-Region').innerHTML = htmlTemplate;
 }
 
-//Show Blue region under devices     ** 
+//Show Blue region under devices   
 function appendBlueData(data) {
     let htmlTemplate = "";
     for (let datas of data) {
