@@ -273,6 +273,7 @@ a {
   border-radius: 50%;
   display: inline-block;
   /*color: transparent;*/
+  margin-left: 10px;
 }
 
 .flags-wrap {
