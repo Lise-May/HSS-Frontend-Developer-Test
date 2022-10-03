@@ -9,7 +9,7 @@ async function fetchData() {
     console.log(_data.$values[0].regionDeviceList.$values);
     appendGreenData(_data.$values[0].regionDeviceList.$values);
     appendBlueData(_data.$values[1].regionDeviceList.$values);
-appendDeviceStatusColor();
+    appendDeviceStatusColor();
 }
 
 fetchData();
@@ -27,6 +27,7 @@ function appendDeviceStatusColor() {
     }
     
 };
+
 
 
 //change color on flag (red and gren)  
