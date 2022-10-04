@@ -10,29 +10,48 @@ async function fetchData() {
     appendGreenData(_data.$values[0].regionDeviceList.$values);
     appendBlueData(_data.$values[1].regionDeviceList.$values);
     appendDeviceStatusColor();
+    appendflagStatusColor();
 }
 
 fetchData();
 
 // change color on status circkels (red, yellow and green)
+
 function appendDeviceStatusColor() {
-    if (document.getElementByClassName('device-status').innerHTML = 'Fail') {
-        document.getElementByClassName('device-status').style.backgroundColor = '#FF0000';
+
+    let deviceItems = document.getElementsByClassName('device-status');
+    for (const di of deviceItems) {
+        if (di.innerHTML === 'Fail') {
+            console.log("Found failed item")
+            di.style.backgroundColor = '#FF0000';
+        }
+        else if (di.innerHTML === 'Partial') {
+            console.log("Found partial item")
+            di.style.backgroundColor = '#ffe101';
+        }
+        else if (di.innerHTML === 'Normal') {
+            console.log("Found normal item")
+            di.style.backgroundColor = '#6dc17e';
+        }
     }
-    else if (document.getElementByClassName('device-status').innerHTML = 'Partial') {
-        document.getElementByClassName('device-status').style.backgroundColor = '#FFFF00';
-    }
-    else if (document.getElementByClassName('device-status').innerHTML = 'Normal') {
-        document.getElementByClassName('device-status').style.backgroundColor = '#32CC32';
-    }
-    
 };
-
-
 
 //change color on flag (red and gren)  
 
+function appendflagStatusColor() {
 
+    let flags = document.getElementsByClassName('flag');
+    for (const di of flags) {
+        if (di.innerHTML === 'false') {
+            console.log("Found failed item")
+            di.style.backgroundColor = '#FF0000';
+        }
+        else if (di.innerHTML === 'true') {
+            console.log("Found normal item")
+            di.style.backgroundColor = '#6dc17e';
+        }
+    }
+};
 
 //Show green region under devices      
 function appendGreenData(data) {
