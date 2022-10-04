@@ -14,7 +14,7 @@ async function fetchData() {
 
 fetchData();
 
-// change color on status (red, yellow and green)
+// change color on status circkels (red, yellow and green)
 function appendDeviceStatusColor() {
     if (document.getElementByClassName('device-status').innerHTML = 'Fail') {
         document.getElementByClassName('device-status').style.backgroundColor = '#FF0000';
